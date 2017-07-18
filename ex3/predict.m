@@ -28,6 +28,11 @@ a2=sigmoid(z2);
 a2=[ones(size(a2,1),1), a2];
 z3=a2*Theta2';
 a3=sigmoid(z3);
+
+%Theta1=[ones(1, size(Theta1, 2)) ; Theta1];
+%all_theta=Theta1'*Theta2';
+%z=X*all_theta;
+%a3=sigmoid(z);
 [_, p]=max(a3, [], 2);
 
 
